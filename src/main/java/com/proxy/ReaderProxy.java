@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import com.domain.User;
 
-@FeignClient(name="zuul-ms", url="${zuul-url}")  //zuul-ms
+@FeignClient(name="zuul-ms", url="${zuul.url}")  //zuul-ms
 public interface ReaderProxy {
 
 	@GetMapping("/read-ms/read")				 //read-ms/uri
