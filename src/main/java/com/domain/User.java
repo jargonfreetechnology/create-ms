@@ -19,6 +19,7 @@ public class User {
 	private String hobbies;
 	private String languages;
 	private String gender;
+	private String base64EncodedImg;
 
 	public User() {
 
@@ -90,6 +91,14 @@ public class User {
 		this.gender = gender;
 	}
 
+	public String getBase64EncodedImg() {
+		return base64EncodedImg;
+	}
+
+	public void setBase64EncodedImg(String base64EncodedImg) {
+		this.base64EncodedImg = base64EncodedImg;
+	}
+	
 	@Override
 	public String toString() {
 		return "User [name=" + name + ", address=" + address + ", diet=" + diet + ", hobbies=" + hobbies + ", languages=" + languages + ", gender=" + gender + "]";

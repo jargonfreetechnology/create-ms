@@ -16,10 +16,10 @@ public class CreateServiceImpl implements IcreateService {
 
 	/* Create a record */
 	@Override
-	public void createUser(User user) {
-		userDaoImpl.save(user);
-
+	public User createUser(User user) {
+		user = userDaoImpl.save(user);
 		System.out.println("Record created!!!");
+		return user;
 	}
 
 	@Override

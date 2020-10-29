@@ -8,6 +8,6 @@ import com.domain.User;
 public interface IcreateService {
 
 	/* Create a record */
-	public void createUser(User user);
+	public User createUser(User user);
 
 }
